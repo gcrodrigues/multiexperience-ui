@@ -3,6 +3,9 @@
   "repository": "git@github.com:gcrodrigues/multiexperience-ui.git",
   "license": "MIT",
   "devDependencies": {
+    "@types/react": "^18.0.37",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "typescript": "^5.4.3"
   },
   "peerDependencies": {
