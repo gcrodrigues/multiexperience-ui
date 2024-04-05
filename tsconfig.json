@@ -20,4 +20,5 @@
 		}
   },
 	"include": ["packages"],
+  "exclude": ["packages/**/*.stories.ts", ".storybook"]
 }
