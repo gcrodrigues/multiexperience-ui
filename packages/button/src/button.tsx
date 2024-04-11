@@ -10,8 +10,8 @@ type ButtonProps = HTMLAttributes<HTMLButtonElement> & {
   rounded?: 'full' | 'md' | 'none'
 }
 
-const button = tv({
-  base: 'transition py-2 px-4 text-center relative flex items-center gap-4 data-[isopen=false]:flex',
+export const buttonVariants = tv({
+  base: 'py-2 px-4 text-center relative flex items-center gap-4',
   variants: {
     type:{
       outlined: 'bg-opacity-15 hover:bg-opacity-25 border-solid border-2 text-neutral-800 dark:text-neutral-100',
@@ -58,7 +58,7 @@ const button = tv({
 
 function Button(props: ButtonProps) {
   const { className, children } = props
-  return <button className={twMerge('btn', button(props), className)}>{children}</button>
+  return <button className={twMerge('btn', buttonVariants(props), className)}>{children}</button>
 }
 
 export default Button

@@ -1,17 +1,29 @@
 {
   "name": "@multiexperience/button",
   "version": "1.0.0",
-  "description": "Multiexperience UI Kit button",
+  "description": "Multiexperience UI Kit Button",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/index.d.ts",
   "type": "module",
   "scripts": {
+    "packages:clear": "rimraf dist",
+    "build": "yarn packages:clear && rollup --config ./rollup.config.mjs",
+    "prepare": "yarn run build"
   },
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
+  "devDependencies": {
+    "postcss": "^8.4.38",
+    "rimraf": "^5.0.1"
+  },
+  "dependencies": {
+    "tailwind-merge": "^2.2.2",
+    "tailwind-variants": "^0.2.1"
+  },
+  "url": "https://github.com/gcrodrigues/multiexperience-ui",
   "repository": {
     "type": "git",
     "url": "https://github.com/gcrodrigues/multiexperience-ui"
