@@ -20,5 +20,5 @@
 		}
   },
 	"include": ["packages"],
-  "exclude": ["packages/**/*.stories.ts", ".storybook"]
+  "exclude": ["packages/**/*.stories.ts", ".storybook", "images"]
 }
