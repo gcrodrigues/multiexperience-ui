@@ -1,2 +1,7 @@
 node_modules
 *storybook.log
+.rollup.cache
+.nx
+storybook-static
+tsconfig.tsbuildinfo
+dist
