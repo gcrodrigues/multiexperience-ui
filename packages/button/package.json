@@ -6,6 +6,11 @@
   "module": "./dist/esm/index.js",
   "types": "./dist/index.d.ts",
   "type": "module",
+  "files": [
+    "dist",
+    "package.json",
+    "yarn.lock"
+  ],
   "scripts": {
     "packages:clear": "rimraf dist",
     "build": "yarn packages:clear && rollup --config ./rollup.config.mjs",
