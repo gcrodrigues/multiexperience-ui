@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Button }  from './src'
 
 const meta = {
-  title: 'Button',
+  title: 'Packages/Button',
   component: Button,
   parameters: {
     layout: 'centered'
@@ -37,4 +37,3 @@ export const Solid: Story = {
     variant: 'primary'
   },
 }
-
